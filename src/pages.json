@@ -1,0 +1,19 @@
+{
+	"pages": [
+		{
+			"path": "pages/cursordetail/books",
+			"style": {
+				"navigationBarTitleText": "蛋黄启蒙",
+				"pageOrientation": "landscape",
+				"navigationStyle": "custom",
+				"disableScroll":true
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "蛋黄启蒙",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
