@@ -5,6 +5,10 @@
  
 ## 运行本项目
 
+## 注意事项（重要）
+### 项目本身是由npm的方式构建的，由于上传插件之后DCloud自动解析成非npm项目，完整项目请到 https://github.com/fenglixuelilili/uniapp-xbook 地址下载-对应下方文档
+### 下载之后的项目可以直接在HBuilderX中运行
+
 ## 安装依赖
 ```
 npm i
@@ -15,16 +19,16 @@ npm i
 npm run dev:mp-weixin
 ```
 ### 如何使用，应用到自己的项目中？
-1. 将utils文件夹中的文件内容复制到自己的项目中，并且在mian.js中引入
+1. 将utils文件夹中的文件内容复制到自己的项目中，并且在main.js中引入
 <pre>
     <code>
-	在mian.js中引入：
-	import xwutlis from './utlis'
-	//将方法引入到Vue原型上用来全局访问
-	Vue.prototype.$xw = {}
-	for (let fn in xwutlis) {
-		Vue.prototype.$xw[fn] = xwutlis[fn]
-	}
+			在main.js中引入：
+			import xwutlis from './utlis'
+			//将方法引入到Vue原型上用来全局访问
+			Vue.prototype.$xw = {}
+			for (let fn in xwutlis) {
+				Vue.prototype.$xw[fn] = xwutlis[fn]
+			}
     </code>
 </pre>
 

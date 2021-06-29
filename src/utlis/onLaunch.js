@@ -1,5 +1,5 @@
 export default {
   initStore(that) {
-    that.$store.commit('getPhoneType')
+    // that.$store.commit('getPhoneType')
   }
 }

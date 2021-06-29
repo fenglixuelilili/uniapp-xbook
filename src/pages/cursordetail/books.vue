@@ -195,103 +195,43 @@ export default {
           content_list: [
             {
               image_url:
-                'https://image.xwsxedu.com/f7e6017273c4f54e449cd72b7200780a.jpg',
+                'https://img2.baidu.com/it/u=28541236,4107248362&fm=26&fmt=auto&gp=0.jpg',
               voice_url:
                 'https://voice.xwsxedu.com/303fcfec1697ecd89ed21764626e8b74.mp3'
             },
             {
               image_url:
-                'https://image.xwsxedu.com/21a755ef260abc9bb5ef1c515d919bf5.jpg',
+                'https://img0.baidu.com/it/u=2784862033,2668338252&fm=26&fmt=auto&gp=0.jpg',
               voice_url:
                 'https://voice.xwsxedu.com/481113974eeb64aac2ab1f934b250562.mp3'
             },
             {
               image_url:
-                'https://image.xwsxedu.com/87c9b5129cd6b7fdf3c192d109abe409.jpg',
+                'https://img0.baidu.com/it/u=2898675182,3991212596&fm=26&fmt=auto&gp=0.jpg',
               voice_url:
                 'https://voice.xwsxedu.com/9fc46a5bc085822492419e6ada1d6d64.mp3'
             },
             {
               image_url:
-                'https://image.xwsxedu.com/dafed8636a56397e75e58113ea9b9b4c.jpg',
+                'https://img1.baidu.com/it/u=3562116068,3792326334&fm=26&fmt=auto&gp=0.jpg',
               voice_url:
                 'https://voice.xwsxedu.com/c38dd7088328fdb7007feec840cbf4fd.mp3'
             },
             {
               image_url:
-                'https://image.xwsxedu.com/2f0799f4fa933822c8e890eb182ce222.jpg',
+                'https://img2.baidu.com/it/u=1052437126,3032284531&fm=26&fmt=auto&gp=0.jpg',
               voice_url:
                 'https://voice.xwsxedu.com/2ff4b8c4198b327a36d4103c221302c3.mp3'
             },
             {
               image_url:
-                'https://image.xwsxedu.com/52e719c7b795c530e9d70f12541ff2aa.jpg',
+                'https://img2.baidu.com/it/u=3424693135,535029859&fm=11&fmt=auto&gp=0.jpg',
               voice_url:
                 'https://voice.xwsxedu.com/5ac56395e531b592326324240640d268.mp3'
             },
             {
               image_url:
-                'https://image.xwsxedu.com/47e3019fac86defde5487f2cc86e1a70.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/02b8fd680e3bae12761ce03f81c3063d.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/aa91afd4145b83479419f3a9ad939124.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/472b3d69c3f85fb429a314fb892697e5.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/79f0379711434dab305245e6d918c535.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/aac819a35154c1b62cc1727dbe035e5f.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/0f03c52e45748e4c132bd1a4d682f6ba.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/9bbfff8bec5fefc797e940c1c0359f21.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/0b540443b7b8e2a395903b8fa5471ec8.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/722a02f12d53775138437f291a15d8bd.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/f0c2d417f9cf2df951edd11cad916138.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/a2582f16c5f2efd3d14b9e210370f02b.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/a54cbc4131e9a645a4375aa5c525f9e1.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/ec027f2a2cc656961ab183ea146660fc.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/2e603319905696bf0ee25f63066cfe7e.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/53a09d02ad08ab9389d7043ecd7d6c6e.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/adf758a4cde6d18ddaf333584a2ecdc0.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/2c20d5230a0f084c7aa24035c7193aa7.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/407e744968a958c6a7dd6cd68d597fe4.jpg',
-              voice_url:
-                'https://voice.xwsxedu.com/790607fdd6144f708883a421988468be.mp3'
-            },
-            {
-              image_url:
-                'https://image.xwsxedu.com/f5324672257679711a39c9b12279c093.jpg',
+                'https://img0.baidu.com/it/u=795132588,653282595&fm=26&fmt=auto&gp=0.jpg',
               // interactive_elements: [],
               // question_list: [
               //   {
