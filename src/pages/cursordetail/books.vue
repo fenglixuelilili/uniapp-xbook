@@ -1,30 +1,46 @@
 <template>
+
   <view class="book">
+
     <template v-show="!isend">
+
       <books :booklist="list" v-show="loadingtype === ''"></books>
+
     </template>
+
     <xw-back></xw-back>
+
     <loading-question
       :type="loadingtype"
       v-if="loadingtype !== ''"
       :end="loadingend"
       :progress="6"
     ></loading-question>
+
     <xw-activity-end v-if="isend" @again="again" @next="next"></xw-activity-end>
+
     <template>
+
       <view class="zhiyin" v-if="iszhiyin">
+
         <image
           src="https://naughty-kid-system.oss-cn-beijing.aliyuncs.com/image/public/wxApp/other/shou.png"
           mode="widthFix"
         />
+
       </view>
+
       <view class="play" @click="bookplay" v-if="showplay">
+
         <image
           src="https://naughty-kid-system.oss-cn-beijing.aliyuncs.com/image/public/wxApp/other/yinpin.png"
           mode="widthFix"
         />
+
       </view>
+
       <view class="auto" @click="auto" v-if="showplay">
+
         <image
           :src="
             autostatus
@@ -33,13 +49,21 @@
           "
           mode="widthFix"
         />
+
       </view>
+
       <view class="dealy">
+
         <text>正在疯狂为您加载中，请耐心等待一下哦 ~~</text>
+
       </view>
+
     </template>
+
   </view>
+
 </template>
+
 <script>
 import books from '@/components/books/books'
 let _index = ''
@@ -118,6 +142,7 @@ export default {
           },
           fail: err => {
             that.$xw.Toast('绘本下载失败，正在重新尝试！')
+            console.log(url)
             let routes = getCurrentPages() // 获取当前打开过的页面路由数组
             let curRoute = routes[routes.length - 1].route // 获取当前页面路由，也就是最后一个打开的页面路由
             let params = routes[routes.length - 1].options // 获取当前页面路由，也就是最后一个打开的页面路由
@@ -195,43 +220,43 @@ export default {
           content_list: [
             {
               image_url:
-                'https://img2.baidu.com/it/u=28541236,4107248362&fm=26&fmt=auto&gp=0.jpg',
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223344579147616172233445791481615_1.jpg',
               voice_url:
-                'https://voice.xwsxedu.com/303fcfec1697ecd89ed21764626e8b74.mp3'
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223347561254e8e17223347561263856_sample-3s.mp3'
             },
             {
               image_url:
-                'https://img0.baidu.com/it/u=2784862033,2668338252&fm=26&fmt=auto&gp=0.jpg',
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223346407579889172233464075786259_7.jpg',
               voice_url:
-                'https://voice.xwsxedu.com/481113974eeb64aac2ab1f934b250562.mp3'
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/172233479775248d917223347977528717_sample-15s.mp3'
             },
             {
               image_url:
-                'https://img0.baidu.com/it/u=2898675182,3991212596&fm=26&fmt=auto&gp=0.jpg',
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223345236471907172233452364819194_3.jpeg',
               voice_url:
-                'https://voice.xwsxedu.com/9fc46a5bc085822492419e6ada1d6d64.mp3'
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223347561254e8e17223347561263856_sample-3s.mp3'
             },
             {
               image_url:
-                'https://img1.baidu.com/it/u=3562116068,3792326334&fm=26&fmt=auto&gp=0.jpg',
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223345534553e29172233455345554395_4.jpeg',
               voice_url:
-                'https://voice.xwsxedu.com/c38dd7088328fdb7007feec840cbf4fd.mp3'
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/172233479775248d917223347977528717_sample-15s.mp3'
             },
             {
               image_url:
-                'https://img2.baidu.com/it/u=1052437126,3032284531&fm=26&fmt=auto&gp=0.jpg',
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223345819354ab2172233458193526264_5.jpeg',
               voice_url:
-                'https://voice.xwsxedu.com/2ff4b8c4198b327a36d4103c221302c3.mp3'
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223347561254e8e17223347561263856_sample-3s.mp3'
             },
             {
               image_url:
-                'https://img2.baidu.com/it/u=3424693135,535029859&fm=11&fmt=auto&gp=0.jpg',
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223346238908522172233462389072678_6.jpeg',
               voice_url:
-                'https://voice.xwsxedu.com/5ac56395e531b592326324240640d268.mp3'
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/172233479775248d917223347977528717_sample-15s.mp3'
             },
             {
               image_url:
-                'https://img0.baidu.com/it/u=795132588,653282595&fm=26&fmt=auto&gp=0.jpg',
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/17223346407579889172233464075786259_7.jpg',
               // interactive_elements: [],
               // question_list: [
               //   {
@@ -431,7 +456,7 @@ export default {
               //   }
               // ],
               voice_url:
-                'https://voice.xwsxedu.com/3f07e62442f40ae7ab2fec4eef6187f1.mp3'
+                'https://ysys-assets.oss-cn-beijing.aliyuncs.com/public/172233479775248d917223347977528717_sample-15s.mp3'
             }
           ],
           create_time: 1606550952,
@@ -462,6 +487,7 @@ export default {
   }
 }
 </script>
+
 <style scoped lang="scss">
 .dealy {
   position: absolute;
@@ -546,3 +572,4 @@ export default {
   }
 }
 </style>
+

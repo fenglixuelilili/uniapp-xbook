@@ -1,26 +1,39 @@
 <template>
+
   <view class="wrapper" @touchstart="start" @touchend="end">
+
     <view class="content">
+
       <!-- 左侧翻页逻辑 -->
+
       <template>
+
         <!-- 正常的当前左侧 -->
+
         <view
           class="left"
           :class="{ animate: direction == 'backoff' && !animateStatic }"
           :style="{ zIndex: direction == 'backoff' && !animateStatic ? 4 : 3 }"
           style="backface-visibility: hidden;"
         >
+
           <view class="animate-wrapper">
+
             <activecomponent
               @next="next"
               @pre="pre"
               :i="i"
               :booklist="booklist"
             ></activecomponent>
+
             <!--  #endif -->
+
           </view>
+
         </view>
+
         <!-- 左侧背面 -->
+
         <view
           class="left left-hide"
           :class="{ animate: direction == 'backoff' && !animateStatic }"
@@ -28,35 +41,52 @@
             zIndex: direction == 'backoff' && !reading && !animateStatic ? 4 : 2
           }"
         >
+
           <view class="animate-wrapper">
+
             <activecomponent
               @next="next"
               @pre="pre"
               :i="i - 1"
               :booklist="booklist"
             ></activecomponent>
+
             <!--  #endif -->
+
           </view>
+
         </view>
+
         <!-- 上一页 -->
+
         <view
           class="left left-next"
           :style="{ zIndex: direction == 'backoff' ? 2 : 1 }"
         >
+
           <view class="animate-wrapper">
+
             <activecomponent
               @next="next"
               @pre="pre"
               :i="i - 1"
               :booklist="booklist"
             ></activecomponent>
+
             <!--  #endif -->
+
           </view>
+
         </view>
+
       </template>
+
       <!-- 右侧翻页逻辑 -->
+
       <template>
+
         <!-- 正常的右侧 -->
+
         <view
           class=" right "
           :class="{ animateRight: direction == 'forward' && !animateStatic }"
@@ -64,52 +94,77 @@
           :style="{ zIndex: direction == 'forward' && !animateStatic ? 4 : 3 }"
           v-show="rightnormal"
         >
+
           <!-- 正常的右侧 -->
+
           <view class="animate-wrapper">
+
             <activecomponent
               @next="next"
               @pre="pre"
               :i="i"
               :booklist="booklist"
             ></activecomponent>
+
             <!--  #endif -->
+
           </view>
+
         </view>
+
         <!-- 背面 -->
+
         <view
           class="right  right-hide"
           :class="{ animateRight: direction == 'forward' && !animateStatic }"
           :style="{ zIndex: direction == 'forward' && !animateStatic ? 3 : 2 }"
         >
+
           <view class="animate-wrapper">
+
             <activecomponent
               @next="next"
               @pre="pre"
               :i="i + 1"
               :booklist="booklist"
             ></activecomponent>
+
             <!--  #endif -->
+
           </view>
+
         </view>
+
         <!-- 底层下一页 -->
+
         <view
           class="right right-next"
           :style="{ zIndex: direction == 'forward' ? 2 : 1 }"
         >
+
           <view class="animate-wrapper">
+
             <activecomponent
               @next="next"
               @pre="pre"
               :i="i + 1"
               :booklist="booklist"
             ></activecomponent>
+
             <!--  #endif -->
+
           </view>
+
         </view>
+
       </template>
+
     </view>
+
   </view>
+
 </template>
+
 <script>
 import activecomponent from './activecomponent'
 export default {
@@ -314,6 +369,7 @@ export default {
   }
 }
 </script>
+
 <style lang="scss" scoped>
 .wrapper {
   width: 100vw;
@@ -379,18 +435,22 @@ export default {
 }
 @keyframes rotate {
   0% {
-    transform: perspective(1000px) rotateY(0deg);
+    transform: rotateY(0deg);
+    // perspective(2000px)
   }
   100% {
-    transform: perspective(1000px) rotateY(-180deg);
+    transform: rotateY(-180deg);
+    // perspective(2000px)
   }
 }
 @keyframes rotateforword {
   0% {
-    transform: perspective(1000px) rotateY(0deg);
+    transform: rotateY(0deg);
+    // perspective(2000px)
   }
   100% {
-    transform: perspective(1000px) rotateY(180deg);
+    transform: rotateY(180deg);
+    // perspective(2000px)
   }
 }
 .animate {
@@ -404,3 +464,4 @@ export default {
   // transform: perspective(800px) rotateY(-180deg);
 }
 </style>
+

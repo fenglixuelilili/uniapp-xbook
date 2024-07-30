@@ -12,7 +12,7 @@ const store = new Vuex.Store({
       // 多少秒出现小手
       coursetime: 1000,
       iscourse: false,
-      auto: true,
+      auto: false,
       src: ''
     }
   },
